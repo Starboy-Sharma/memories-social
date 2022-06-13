@@ -4,7 +4,7 @@
   "description": "This is the backend of memories basic social media.",
   "main": "app.js",
   "scripts": {
-    "development": "nodemon app.js",
+    "dev": "nodemon app.js",
     "production": "node app.js"
   },
   "keywords": [

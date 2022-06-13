@@ -6,6 +6,9 @@ const morgan = require('morgan');
 
 const port = process.env.PORT || 3000;
 
+// import database
+const DB = require('./database/connection');
+
 // Middlewares
 app.use(express.json());
 app.use(cors());
