@@ -5,9 +5,10 @@ This is a basic social application where user can upload images and see other us
 
 ## Memories (Basic Social Application)
 
-Home Page Public API 
-filters are
-popular recent loved
+Home Page Public API  filters are
+- popular
+- recent
+- loved
 signup
 login
 profile page
