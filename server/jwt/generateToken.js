@@ -3,9 +3,10 @@ const jwt = require('jsonwebtoken');
 const response = require('../response/responses');
 const secretKey = process.env.ACCESS_TOKEN_SECRET;
 
+
 function generateJwt(payload) {
     return new Promise((resolve, reject) => {
-        jwt.sign(payload, secretKey, { expiresIn: payLoad.expiresIn }, (error, token) => {
+        jwt.sign(payload, secretKey, { expiresIn: payload.expiresIn }, (error, token) => {
             if (error) {
                 console.log('generateJwt ->', error);
                 reject(error);
@@ -18,4 +19,4 @@ function generateJwt(payload) {
     });
 }
 
-module.exports = generateJwt;
+module.exports = {generateJwt};

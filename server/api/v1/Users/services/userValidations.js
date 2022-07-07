@@ -9,6 +9,8 @@ function validate(key) {
         }
 
         const { error } = schema[key].validate(req.body);
+        const valid = error == null;
+
         if (valid) {
             next();
         } else {
