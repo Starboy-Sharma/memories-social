@@ -22,7 +22,7 @@ const UserSchema = mongoose.Schema(
             type: String,
             required: "Password cannot be empty",
             minLength: 8,
-            maxLength: 50,
+            maxLength: 500,
         },
 
         status: {
